@@ -21,4 +21,24 @@ class TrackingModel
         $args = [':cus_ID' => $this->Cus_ID];
         return DB::run($sql, $args);
     }
+	
+	function viewProgress()
+    {
+        $sql = "select * from Status where TrackID=:TrackID";
+        $args = [':TrackID' => $this->TrackID];
+        return DB::run($sql, $args);
+    }
+	
+	function viewUnaccepted()
+    {
+        $sql = "select * from Tracking join customer on(Tracking.Cus_ID = customer.Cus_ID) inner join order1 on Tracking.Ord_ID=order1.Ord_ID inner join service on order1.Service_ID=service.Service_ID inner join sp on sp.sp_id=service.sp_id where RunStatus='unaccepted' and CusStatus LIKE 'On Delivery'";
+        return DB::run($sql);
+    }
+
+    function viewAccepted()
+    {
+        $sql = "select * from Tracking join customer on(Tracking.Cus_ID = customer.Cus_ID) inner join order1 on Tracking.Ord_ID=order1.Ord_ID inner join service on order1.Service_ID=service.Service_ID inner join sp on sp.sp_id=service.sp_id where RunStatus='accepted' AND R_ID=:rid and CusStatus NOT LIKE 'Completed'";
+        $args = [':rid' => $this->R_ID];
+        return DB::run($sql, $args);
+    }
 }
