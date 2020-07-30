@@ -41,4 +41,41 @@ class TrackingModel
         $args = [':rid' => $this->R_ID];
         return DB::run($sql, $args);
     }
+	
+	function runAccept()
+    {
+        $sql = "update Tracking set RunStatus=:RunStatus, R_ID=:rid where TrackID=:TrackID";
+        $args = [':TrackID' => $this->TrackID, ':RunStatus' => $this->RunStatus, ':rid' => $this->R_ID];
+        return DB::run($sql, $args);
+    }
+
+    function viewStatus()
+    {
+        $sql = "select * from Tracking where TrackID=:TrackID";
+        $args = [':TrackID' => $this->TrackID];
+        return DB::run($sql, $args);
+    }
+	
+	function updateProgress()
+    {
+        $sql = "insert into Status(TrackID, StatID, TrackDate, TrackProcess,TrackTime) values(:TrackID, :StatID, :TrackDate, :TrackProcess,:TrackTime)";
+        $args = [':TrackID' => $this->TrackID, ':StatID' => $this->StatID, ':TrackDate' => $this->TrackDate, ':TrackProcess' => $this->TrackProcess, ':TrackTime' => $this->TrackTime];
+        $stmt = DB::run($sql, $args);
+        $count = $stmt->rowCount();
+        return $count;
+    }
+
+    function updateDeliveryStatus()
+    {
+        $sql = "update Tracking set CusStatus='Completed' where TrackID=:trackID";
+        $args = [':trackID' => $this->TrackID];
+        return DB::run($sql, $args);
+    }
+	
+	function viewRunner()
+    {
+        $sql = "select * from Tracking inner join runner on Tracking.R_ID = Runner.R_ID where Tracking.TrackID=:trackID";
+        $args = [':trackID' => $this->TrackID];
+        return DB::run($sql, $args);
+    }
 }
