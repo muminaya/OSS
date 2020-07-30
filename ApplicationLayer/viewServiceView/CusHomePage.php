@@ -11,7 +11,17 @@ session_start();
 <body>
     <div class="mx-auto" style="width: 90%;">
         <?php require __DIR__ . '/../../src/navbar.php' ?>
+        <script>
+            var query;
 
+            function updateSearch(search) {
+                query = document.getElementById(search).value;
+            };
+
+            function redirectPage() {
+                window.location.href = "./CusSearchProductList.php?query=" + query;
+            }
+        </script>
         <div class="input-group">
             <input type="text" onInput="updateSearch('search')" id="search" name="search" class="form-control" />
             <div class="input-group-append">
