@@ -6,11 +6,8 @@ $pay = new paymentController();
 $data = $pay->loadReceipt();
 ?>
 <html>
-
 <head>
-
 </head>
-
 <body>
     <div class="mx-auto" style="width: 90%;">
         <?php require __DIR__ . '/../../src/navbar.php' ?>
@@ -35,15 +32,12 @@ $data = $pay->loadReceipt();
                             <div class="col-6">
                                 <img height="225" width="350" src="../../src/img/paypal.jpg">
                             </div>
-
                             <div class="col-6 text-right">
                                 <p class="font-weight-bold mb-1">Receipt</p>
                                 <p class="text-muted">Payment Date = <?= $row['P_Date'] ?></p>
                             </div>
                         </div>
-
                         <hr class="mb-1">
-
                         <div class="row py-2 px-5">
                             <div class="col-6">
                                 <p class="font-weight-bold mb-3">Customer Information</p>
@@ -54,7 +48,6 @@ $data = $pay->loadReceipt();
                                             echo $each['Ship_Add'];
                                         } ?></p>
                             </div>
-
                             <div class="col-6 text-right">
                                 <p class="font-weight-bold mb-3">Payment Details</p>
                                 <p class="mb-1"><span class="text-muted">Payment Type: </span> Paypal</p>
@@ -62,10 +55,8 @@ $data = $pay->loadReceipt();
                                 </p>
                                 <p class="mb-1"><span class="text-muted">Payee's Name: </span> SMS Financial Deparment
                                 </p>
-
                             </div>
                         </div>
-
                         <div class="row p-5">
                             <div class="col-12">
                                 <table class="table">
@@ -79,7 +70,6 @@ $data = $pay->loadReceipt();
                                             <th class="border-0 text-uppercase small font-weight-bold">Item Subotal</th>
                                         </tr>
                                     </thead>
-
                                     <?php foreach ($orders as $order) { ?><tbody>
                                         <tr>
                                             <td><?= $i ?></td>
@@ -92,22 +82,18 @@ $data = $pay->loadReceipt();
                                     </tbody>
                                     <?php $i++;
                                         } ?>
-
                                 </table>
                             </div>
                         </div>
-
                         <div class="d-flex flex-row-reverse bg-dark text-white p-4">
                             <div class="py-3 px-5 text-right">
                                 <div class="mb-2">Grand Total</div>
                                 <div class="h2 font-weight-light">RM <?= $row['T_Payment'] ?></div>
                             </div>
-
                             <div class="py-3 px-5 text-right">
                                 <div class="mb-2">Delivery Fee</div>
                                 <div class="h2 font-weight-light">RM <?= $row['delivery_fee'] ?></div>
                             </div>
-
                             <div class="py-3 px-5 text-right">
                                 <div class="mb-2">Item(s) subtotal</div>
                                 <div class="h2 font-weight-light">RM <?= $row['subtotal'] ?></div>
@@ -117,10 +103,8 @@ $data = $pay->loadReceipt();
                 </div>
             </div>
         </div>
-
     </div>
     <?php
     } ?>
 </body>
-
 </html>
