@@ -28,6 +28,12 @@
                 </a>
             </li>
             <li class="nav-item justify-content-center align-self-center px-4">
+                <a href="/OSS/ApplicationLayer/paymentView/CusReceiptList.php">
+                    <i class="material-icons md-48 md-dark">local_post_office </i>
+                </a>
+            </li>
+
+            <li class="nav-item justify-content-center align-self-center px-4">
                 <a href="/OSS/ApplicationLayer/userProfileView/CustomerEditProfile.php">
                     <span class="material-icons md-48">account_circle </span>
                 </a>
