@@ -20,6 +20,13 @@
                     href="/OSS/ApplicationLayer/viewServiceView/CusHomePage.php">SMS</a></li>
         </ul>
         <ul class="navbar-nav mr-2">
+			<li class="nav-item justify-content-center align-self-center px-4">
+                <a href="/mumin/ApplicationLayer/trackingView/CusTrackList.php">
+                    <span class="material-icons md-48 md-dark">
+                        gps_fixed
+                    </span>
+                </a>
+            </li>
             <li class="nav-item justify-content-center align-self-center px-4">
                 <a href="/OSS/ApplicationLayer/orderView/CusCart.php">
                     <span class="material-icons md-48 md-dark">
@@ -35,7 +42,8 @@
             <li class="nav-item justify-content-center align-self-center px-5">
                 <a href='/OSS/ApplicationLayer/userProfileView/CusLogin.php'>
                     <img src="/OSS/src/img/signout.png" />
-                </a></li>
+                </a>
+			</li>
         </ul>
     </nav>
 </body>
