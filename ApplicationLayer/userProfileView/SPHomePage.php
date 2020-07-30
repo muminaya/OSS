@@ -34,7 +34,7 @@ require __DIR__ . '/../../src/bootstrap.php';
                         <img src="../../src/img/delivery.jpg" class="card-img-top" alt="Update ServiceP Provided"
                             height="180" />
                         <div class="card-body p-3">
-                            <a href="../manageServiceView/SPUpdateService.php" class="btn btn-primary">Update Service Provided</a>
+                            <a style="color:white;" href="../manageServiceView/SPUpdateService.php" class="btn btn-primary">Update Service Provided</a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ require __DIR__ . '/../../src/bootstrap.php';
                     <div class="card" style="width: 18rem;">
                         <img src="../../src/img/order.jpg" class="card-img-top" alt="View Order" height="180" />
                         <div class="card-body p-3">
-                            <a href="../orderView/SPViewOrder.php" class="btn btn-primary">View Order</a>
+                            <a style="color:white;" href="../orderView/SPViewOrder.php" class="btn btn-primary">View Order</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ require __DIR__ . '/../../src/bootstrap.php';
                     <div class="card" style="width: 18rem;">
                         <img src="../../src/img/analytic.jpg" class="card-img-top" alt="Goods Delivery" height="180" />
                         <div class="card-body p-3">
-                            <a href="../manageAnalyticView/SPAnalytic.php" class="btn btn-primary">View Analytic</a>
+                            <a style="color:white;" href="../manageAnalyticView/SPAnalytic.php" class="btn btn-primary">View Analytic</a>
                         </div>
                     </div>
                 </div>
