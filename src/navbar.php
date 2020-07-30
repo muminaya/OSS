@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-sm bg-light rounded my-3" style="height: 10%;">
         <ul class="navbar-nav navbar-left mr-auto">
             <li class="nav-brand"><a style="font-family: 'Pacifico', cursive; font-size: 30px;" class="nav-link"
-                    href="/OSS/ApplicationLayer/viewServiceView/CusHomePage.php">SMS</a></li>
+                    href="/OSS/ApplicationLayer/viewServiceView/CusHomePage.php">OSS</a></li>
         </ul>
         <ul class="navbar-nav mr-2">
 			<li class="nav-item justify-content-center align-self-center px-4">
@@ -34,6 +34,12 @@
                     </span>
                 </a>
             </li>
+            <li class="nav-item justify-content-center align-self-center px-4">
+                <a href="/OSS/ApplicationLayer/paymentView/CusReceiptList.php">
+                    <i class="material-icons md-48 md-dark">local_post_office </i>
+                </a>
+            </li>
+
             <li class="nav-item justify-content-center align-self-center px-4">
                 <a href="/OSS/ApplicationLayer/userProfileView/CustomerEditProfile.php">
                     <span class="material-icons md-48">account_circle </span>

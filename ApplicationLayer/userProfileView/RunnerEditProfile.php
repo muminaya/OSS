@@ -65,7 +65,8 @@ if (isset($_POST['update'])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text">Contact No</span>
                 </div>
-                <input type="text" name="rtelno" class="form-control" value="<?= $row['R_ContactNo'] ?>">
+                <input type="text" name="rtelno" class="form-control" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" value="<?= $row['R_ContactNo'] ?>">
+                
             </div>
 
             <div class="input-group mb-3 col-6">

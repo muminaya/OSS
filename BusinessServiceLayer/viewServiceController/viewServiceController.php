@@ -12,6 +12,12 @@ class viewServiceController
         return $ser->viewProductList();
     }
 
+    function viewSearchList($search)
+    {
+        $ser = new ServiceModel();
+        $ser->S_Name = $search;
+        return $ser->viewSearchList();
+    }
 
     function viewSortedFromLow($list)
     {

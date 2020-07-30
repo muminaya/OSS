@@ -12,7 +12,13 @@ class ServiceModel
         return DB::run($sql, $args);
     }
 
-    
+    function viewSearchList()
+    {
+        $sql = "select * from service where `S_Name` like :search";
+        $args = [':search' => "%" . $this->S_Name . "%"];
+        return DB::run($sql, $args);
+    }
+
 
     function viewSortedFromLow()
     {

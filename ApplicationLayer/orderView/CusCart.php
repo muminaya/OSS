@@ -23,6 +23,7 @@ if (isset($_POST['submit'])) {
         $ord->updateOrder();
         $dir = __DIR__;
         echo '<script type="text/javascript">';
+        echo 'window.location.href = `../paymentView/CusCheckout.php`;';
         echo '</script>';
         // header(`location: $dir/../../payment/paymentView/CusCheckout.php`);
     } else {
@@ -139,6 +140,9 @@ if (isset($_POST['submit'])) {
             </button>
             <button type="submit" name="update" class="my-3 btn btn-block btn-outline-warning">
                 <h6 class="h4">Update Cart</h6>
+            </button>
+            <button type="submit" name="submit" class="my-3 btn btn-block btn-outline-success">
+                <h6 class="h4">Check Out</h4>
             </button>
 
             <br />
