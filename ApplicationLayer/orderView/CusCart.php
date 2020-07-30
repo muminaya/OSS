@@ -144,6 +144,7 @@ if (isset($_POST['submit'])) {
             <button type="submit" name="submit" class="my-3 btn btn-block btn-outline-success">
                 <h6 class="h4">Check Out</h4>
             </button>
+
             <br />
 
     </div>
