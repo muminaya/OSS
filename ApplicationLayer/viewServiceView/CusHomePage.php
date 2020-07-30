@@ -12,15 +12,16 @@ session_start();
     <div class="mx-auto" style="width: 90%;">
         <?php require __DIR__ . '/../../src/navbar.php' ?>
 
+        <div class="input-group">
+            <input type="text" onInput="updateSearch('search')" id="search" name="search" class="form-control" />
+            <div class="input-group-append">
+                <button onclick="redirectPage()"> Search</button>
+            </div>
+        </div>
         <form method="POST">
             <div class="container">
                 <div class="justify-content-center row" style="margin-top: 3%">
-                    <div class="input-group">
-                        <input type="text" onInput="updateSearch('search')" id="search" name="search" class="form-control" />
-                        <div class="input-group-append">
-                            <button onclick="redirectPage()"> Search</button>
-                        </div>
-                    </div>
+
                     <div class="col-4">
                         <div class="card" style="width: 18rem;">
                             <img src="../../src/img/fd.jpg" class="card-img-top" alt="Food Delivery" />
