@@ -24,7 +24,7 @@ if (isset($_POST['register'])) {
         <nav class="navbar navbar-expand-sm bg-light rounded-pill mt-3" style="height: 10%">
             <ul class="navbar-nav navbar-left mr-auto">
                 <li class="nav-brand">
-                    <a style="font-family: 'Pacifico', cursive; font-size: 30px" class="nav-link" href="#">SMS</a>
+                    <a style="font-family: 'Pacifico', cursive; font-size: 30px" class="nav-link" href="#">OSS</a>
                 </li>
             </ul>
             <ul class="navbar-nav mr-2">
