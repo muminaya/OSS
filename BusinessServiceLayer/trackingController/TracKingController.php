@@ -12,12 +12,7 @@ class TrackingController
         return $Tracking->viewOnD();
     }
 	
-	function viewComp()
-    {
-        $Tracking = new TrackingModel();
-        $Tracking->Cus_ID = $_SESSION['Cus_ID'];
-        return $Tracking->viewComp();
-    }
+	
 	
 	function viewProgress($TrackID)
     {
