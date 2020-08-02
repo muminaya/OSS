@@ -23,7 +23,7 @@ $subtotal = 0;
 <body>
     <div class="mx-auto" style="width: 90%;">
         <?php require __DIR__ . '/../../src/navbar.php' ?>
-        <h5>Customer Homepage > Cart > Customer Checkout Page Example</h5>
+        <h5>Customer Homepage > Cart > Checkout</h5>
 
         <a href="../orderView/CusCart.php">
             <span class="material-icons md-48 text-primary my-3">
