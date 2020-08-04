@@ -23,7 +23,12 @@ $data2 = $Tracking->viewComp();
         <hr>
         <h1 align="center">On Delivery Order</h1>
         <table border="1" width="80%" align="center">
-            
+            <tr>
+                <th>#</th>
+                <th>Service Name</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
             <?php
             $i = 1;
             foreach ($data1 as $row1) { ?>
